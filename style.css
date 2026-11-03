@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap');
+
+:root {
+  --primary-maroon: #800020;    /* สีเลือดหมู */
+  --dark-maroon: #5B0017;       /* สีเลือดหมูเข้ม */
+  --accent-gold: #D4AF37;       /* สีทอง */
+  --light-gold: #F3E5AB;        /* สีทองอ่อน */
+  --white: #FFFFFF;             /* สีขาว */
+  --bg-light: #F8FAFC;          /* สีพื้นหลังสว่าง */
+}
+
+body {
+  font-family: 'Sarabun', sans-serif;
+  background-color: var(--bg-light);
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom Color Classes for Tailwind */
+.bg-maroon { background-color: var(--primary-maroon); }
+.bg-maroon-dark { background-color: var(--dark-maroon); }
+.text-maroon { color: var(--primary-maroon); }
+.border-maroon { border-color: var(--primary-maroon); }
+
+.bg-gold { background-color: var(--accent-gold); }
+.text-gold { color: var(--accent-gold); }
+.border-gold { border-color: var(--accent-gold); }
+
+/* Animation Hover */
+.nav-link {
+  transition: all 0.3s ease;
+}
+.nav-link:hover {
+  color: var(--accent-gold);
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(128, 0, 32, 0.15);
+}
