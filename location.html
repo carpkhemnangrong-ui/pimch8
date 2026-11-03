@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>แผนที่ภายในวิทยาลัย - วิทยาลัยเทคนิคนางรอง</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-50 min-h-screen flex flex-col">
+
+  <div class="bg-maroon text-white py-4 px-6 flex justify-between items-center border-b-4 border-gold">
+    <h1 class="font-bold text-xl">Location : แผนที่ภายในวิทยาลัยและการนำทาง</h1>
+    <a href="index.html" class="bg-gold text-maroon font-bold px-4 py-1.5 rounded text-xs hover:bg-yellow-400">
+      <i class="fa-solid fa-house"></i> ย้อนกลับหน้าหลัก
+    </a>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-4 py-8 flex-grow">
+    <div class="bg-white p-4 rounded-2xl shadow border mb-6">
+      <h2 class="font-bold text-maroon mb-3"><i class="fa-solid fa-map"></i> แผนผังอาคารสถานที่ภายในวิทยาลัย</h2>
+      <!-- วางรูปภาพแผนผังภายในวิทยาลัยที่นี่ -->
+      <img src="images/campus-map.jpg" alt="แผนผังภายในวิทยาลัยเทคนิคนางรอง" class="w-full h-auto rounded-xl border">
+    </div>
+
+    <!-- Google Maps Interactive -->
+    <div class="bg-white p-4 rounded-2xl shadow border">
+      <h2 class="font-bold text-maroon mb-3"><i class="fa-solid fa-location-dot"></i> พิกัด Google Maps</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.3377721868356!2d102.7845!3d14.6325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311be14a1e9dfed9%3A0x6b4f70783ab5b20a!2z4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LmA4LiX4LiE4LiZ4Li04LiE4LiZ4Liy4LiH4Lij4Lit4LiH!5e0!3m2!1sth!2sth!4v1700000000000" 
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" class="rounded-xl">
+      </iframe>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

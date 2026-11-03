@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>หมวดหมู่สถานที่ - วิทยาลัยเทคนิคนางรอง</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-50 min-h-screen flex flex-col">
+
+  <div class="bg-maroon text-white py-4 px-6 flex justify-between items-center border-b-4 border-gold">
+    <h1 class="font-bold text-xl">Service : หมวดหมู่สถานที่บริการ</h1>
+    <a href="index.html" class="bg-gold text-maroon font-bold px-4 py-1.5 rounded text-xs hover:bg-yellow-400">
+      <i class="fa-solid fa-house"></i> ย้อนกลับหน้าหลัก
+    </a>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-4 py-8 flex-grow">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <a href="detail.html?type=academic" class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition border-t-4 border-maroon block">
+        <div class="flex items-center space-x-4">
+          <div class="w-12 h-12 bg-maroon/10 text-maroon rounded-full flex items-center justify-center text-xl">
+            <i class="fa-solid fa-book-open"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-slate-800 text-lg">หมวดอาคารเรียนและห้องปฏิบัติการ</h3>
+            <p class="text-xs text-slate-500">อาคารเรียนช่างอุตสาหกรรม บริหารธุรกิจ และคอมพิวเตอร์</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="detail.html?type=sport" class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition border-t-4 border-gold block">
+        <div class="flex items-center space-x-4">
+          <div class="w-12 h-12 bg-gold/20 text-maroon rounded-full flex items-center justify-center text-xl">
+            <i class="fa-solid fa-volleyball"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-slate-800 text-lg">หมวดหมู่อาคารพละและนันทนาการ</h3>
+            <p class="text-xs text-slate-500">โดมอเนกประสงค์ สนามกีฬา และลานกิจกรรม</p>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

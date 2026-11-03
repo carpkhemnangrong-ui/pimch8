@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ภาพกิจกรรม - วิทยาลัยเทคนิคนางรอง</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-50 min-h-screen flex flex-col">
+
+  <div class="bg-maroon text-white py-4 px-6 flex justify-between items-center border-b-4 border-gold">
+    <h1 class="font-bold text-xl">Gallery : ภาพกิจกรรมและสถานที่</h1>
+    <a href="index.html" class="bg-gold text-maroon font-bold px-4 py-1.5 rounded text-xs hover:bg-yellow-400">
+      <i class="fa-solid fa-house"></i> ย้อนกลับหน้าหลัก
+    </a>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-4 py-8 flex-grow">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <!-- รูปภาพที่สามารถกดดูภาพใหญ่ได้ด้วย Lightbox -->
+      <img src="images/activity-1.jpg" alt="กิจกรรมวิทยาลัย" class="gallery-img w-full h-40 object-cover rounded-xl cursor-pointer hover:opacity-90 transition border">
+      <img src="images/activity-2.jpg" alt="กิจกรรมแผนกคอม" class="gallery-img w-full h-40 object-cover rounded-xl cursor-pointer hover:opacity-90 transition border">
+      <img src="images/activity-3.jpg" alt="บรรยากาศเรียน" class="gallery-img w-full h-40 object-cover rounded-xl cursor-pointer hover:opacity-90 transition border">
+      <img src="images/activity-4.jpg" alt="งานแข่งทักษะ" class="gallery-img w-full h-40 object-cover rounded-xl cursor-pointer hover:opacity-90 transition border">
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

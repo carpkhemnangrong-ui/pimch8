@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>แผนกวิชา - วิทยาลัยเทคนิคนางรอง</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-50 min-h-screen flex flex-col">
+
+  <div class="bg-maroon text-white py-4 px-6 flex justify-between items-center border-b-4 border-gold">
+    <h1 class="font-bold text-xl">Department : แผนกวิชาที่เปิดสอน</h1>
+    <a href="index.html" class="bg-gold text-maroon font-bold px-4 py-1.5 rounded text-xs hover:bg-yellow-400">
+      <i class="fa-solid fa-house"></i> ย้อนกลับหน้าหลัก
+    </a>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-4 py-8 flex-grow">
+    <!-- แผนกคอมพิวเตอร์ Highlighted -->
+    <div class="bg-white p-6 rounded-2xl shadow-md border-2 border-gold mb-8">
+      <div class="flex items-center space-x-3 mb-4">
+        <div class="w-12 h-12 bg-maroon text-gold rounded-full flex items-center justify-center text-xl">
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <div>
+          <h2 class="text-2xl font-bold text-maroon">แผนกวิชาคอมพิวเตอร์ / เทคโนโลยีสารสนเทศ</h2>
+          <p class="text-xs text-slate-500">Computer & Information Technology Department</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <!-- ใส่รูปภาพแผนกคอมพิวเตอร์จริง -->
+          <img src="images/dept-comp.jpg" alt="แผนกคอมพิวเตอร์" class="w-full h-48 object-cover rounded-xl border">
+        </div>
+        <div>
+          <p class="text-slate-700 text-sm mb-4">
+            จัดการเรียนการสอนเกี่ยวกับการเขียนโปรแกรม การพัฒนาเว็บไซต์ ระบบเครือข่ายคอมพิวเตอร์ ฮาร์ดแวร์ เทคโนโลยีมัลติมีเดีย และปัญญาประดิษฐ์
+          </p>
+          <a href="detail.html?dept=computer" class="inline-block bg-maroon text-gold text-xs font-bold px-4 py-2 rounded-lg">
+            ดูรายละเอียดสถานที่/ห้องปฏิบัติการ <i class="fa-solid fa-arrow-right ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- แผนกอื่นๆ -->
+    <h3 class="font-bold text-maroon text-lg mb-4">แผนกวิชาอื่นๆ</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="bg-white p-4 rounded-xl shadow border-l-4 border-gold">
+        <h4 class="font-bold text-slate-800"><i class="fa-solid fa-bolt text-maroon mr-2"></i> แผนกช่างไฟฟ้ากำลัง</h4>
+      </div>
+      <div class="bg-white p-4 rounded-xl shadow border-l-4 border-gold">
+        <h4 class="font-bold text-slate-800"><i class="fa-solid fa-wrench text-maroon mr-2"></i> แผนกช่างยนต์</h4>
+      </div>
+      <div class="bg-white p-4 rounded-xl shadow border-l-4 border-gold">
+        <h4 class="font-bold text-slate-800"><i class="fa-solid fa-microchip text-maroon mr-2"></i> แผนกช่างอิเล็กทรอนิกส์</h4>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

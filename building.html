@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ทำเนียบอาคาร - วิทยาลัยเทคนิคนางรอง</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-50 min-h-screen flex flex-col">
+
+  <div class="bg-maroon text-white py-4 px-6 flex justify-between items-center border-b-4 border-gold">
+    <h1 class="font-bold text-xl">Building : ทำเนียบอาคารสถานที่</h1>
+    <a href="index.html" class="bg-gold text-maroon font-bold px-4 py-1.5 rounded text-xs hover:bg-yellow-400">
+      <i class="fa-solid fa-house"></i> ย้อนกลับหน้าหลัก
+    </a>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-4 py-8 flex-grow">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- การ์ดอาคารที่ 1 -->
+      <div class="bg-white rounded-xl shadow overflow-hidden border">
+        <!-- เปลี่ยนsrc รูปจริงได้ที่นี่ -->
+        <img src="images/building-1.jpg" alt="อาคารอำนวยการ" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <span class="bg-maroon/10 text-maroon font-bold text-xs px-2 py-0.5 rounded">อาคาร 1</span>
+          <h3 class="font-bold text-slate-800 mt-2">อาคารอำนวยการและวิทยบริการ</h3>
+          <p class="text-xs text-slate-600 mt-1">ห้องบริหารงานวิทยาลัย ห้องอำนวยการ และห้องประชุม</p>
+        </div>
+      </div>
+
+      <!-- การ์ดอาคารที่ 2 -->
+      <div class="bg-white rounded-xl shadow overflow-hidden border">
+        <img src="images/building-2.jpg" alt="อาคารปฏิบัติการ" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <span class="bg-maroon/10 text-maroon font-bold text-xs px-2 py-0.5 rounded">อาคาร 2</span>
+          <h3 class="font-bold text-slate-800 mt-2">อาคารปฏิบัติการเทคโนโลยีสารสนเทศ</h3>
+          <p class="text-xs text-slate-600 mt-1">ห้องปฏิบัติการคอมพิวเตอร์ และห้องเรียนทฤษฎี</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
